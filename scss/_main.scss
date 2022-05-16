@@ -187,6 +187,7 @@ span {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
+    
 
 
 
@@ -202,8 +203,7 @@ span {
     background-color: white;
     border:  black;
     text-align: center;
-    justify-content: center;
-    align-content: center;
+    
     
 }
 
@@ -215,13 +215,31 @@ span {
 }
 
 .tabla-de-posiciones-2 {
-    color: black;
-    background-color: white;
-    border: black;
-    text-align: center;
+    @extend .tabla-de-posiciones;
     margin-bottom: 50px;
     
 }
+
+@mixin size {
+    margin-bottom: 30px;
+    width: auto;
+    text-align: center;
+    margin-top: 50px;
+    
+    
+}
+
+.seccion3-desempeño {
+    @include size;
+    
+    
+}
+
+.seccion3-dt {
+    @include size;
+   
+}
+
 
 /*Sección 4*/
 

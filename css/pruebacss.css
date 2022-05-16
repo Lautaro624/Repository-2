@@ -151,13 +151,11 @@ span {
   text-align: center;
   margin-bottom: 30px; }
 
-.tabla-de-posiciones {
+.tabla-de-posiciones, .tabla-de-posiciones-2 {
   color: black;
   background-color: white;
   border: black;
-  text-align: center;
-  justify-content: center;
-  align-content: center; }
+  text-align: center; }
 
 .grupo-b {
   text-align: center;
@@ -166,11 +164,19 @@ span {
   margin-bottom: 30px; }
 
 .tabla-de-posiciones-2 {
-  color: black;
-  background-color: white;
-  border: black;
-  text-align: center;
   margin-bottom: 50px; }
+
+.seccion3-desempeño {
+  margin-bottom: 30px;
+  width: auto;
+  text-align: center;
+  margin-top: 50px; }
+
+.seccion3-dt {
+  margin-bottom: 30px;
+  width: auto;
+  text-align: center;
+  margin-top: 50px; }
 
 /*Sección 4*/
 .charla-con-nosotros {
@@ -242,13 +248,13 @@ footer {
   background-color: #242321; }
 
 @media screen and (min-width: 425px) {
-  .tabla-de-posiciones {
+  .tabla-de-posiciones, .tabla-de-posiciones-2 {
     margin-left: 80px; }
   .tabla-de-posiciones-2 {
     margin-left: 80px; } }
 
 @media screen and (min-width: 768px) {
-  .tabla-de-posiciones {
+  .tabla-de-posiciones, .tabla-de-posiciones-2 {
     margin-left: 250px; }
   .tabla-de-posiciones-2 {
     margin-left: 250px; } }
@@ -278,7 +284,7 @@ footer {
   .texto-aramburu {
     padding-left: 60px;
     padding-right: 60px; }
-  .tabla-de-posiciones {
+  .tabla-de-posiciones, .tabla-de-posiciones-2 {
     margin-left: 350px; }
   .tabla-de-posiciones-2 {
     margin-left: 350px; }
