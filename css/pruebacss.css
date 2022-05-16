@@ -240,3 +240,81 @@ textarea {
 
 footer {
   background-color: #242321; }
+
+@media screen and (min-width: 425px) {
+  .tabla-de-posiciones {
+    margin-left: 80px; }
+  .tabla-de-posiciones-2 {
+    margin-left: 80px; } }
+
+@media screen and (min-width: 768px) {
+  .tabla-de-posiciones {
+    margin-left: 250px; }
+  .tabla-de-posiciones-2 {
+    margin-left: 250px; } }
+
+@media screen and (min-width: 1024px) {
+  .video-di-maria {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .texto-di-maria {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .video-f1 {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .texto-f1 {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .imagen-barty {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .texto-barty {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .imagen-aramburu {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .texto-aramburu {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .tabla-de-posiciones {
+    margin-left: 350px; }
+  .tabla-de-posiciones-2 {
+    margin-left: 350px; }
+  .champions-league {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .texto1-sección5 {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .manchester-city {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .texto2-sección5 {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .boxeo {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .texto3-sección5 {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .nba {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .texto4-sección5 {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .paredes {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .texto5-sección5 {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .leoncitas {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .texto6-sección5 {
+    padding-left: 60px;
+    padding-right: 60px; } }
