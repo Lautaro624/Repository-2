@@ -9,14 +9,15 @@ header {
 
 /*Sección 1*/
 body {
-  height: 100%; }
+  height: 100%;
+  background: #f0f0f0; }
 
 h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Tinos', serif;
-  font-size: 50px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 100px;
   font-style: italic;
   text-shadow: 7px 5px 5px black;
   color: white;
@@ -33,7 +34,8 @@ h1 {
     font-family: 'Bebas Neue', cursive;
     font-style: italic;
     justify-content: center;
-    font-size: 25px; }
+    font-size: 25px;
+    background-color: #f0f0f0; }
 
 h2 {
   display: flex;
@@ -97,6 +99,16 @@ span {
   margin-bottom: 50px; }
 
 /*Sección 2*/
+.h2-seccion2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center; }
+
 .contenedor {
   width: 100%;
   display: flex;
@@ -105,6 +117,7 @@ span {
   margin: auto;
   margin-bottom: 50px; }
   .contenedor .noticias {
+    background-color: white;
     width: 330px;
     height: 430px;
     border-radius: 8px;
@@ -153,7 +166,7 @@ span {
 
 .tabla-de-posiciones, .tabla-de-posiciones-2 {
   color: black;
-  background-color: white;
+  background-color: #f0f0f0;
   border: black;
   text-align: center; }
 
