@@ -257,6 +257,132 @@ textarea {
 .container-fluid {
   margin-top: 50px; }
 
+/*Sección 6*/
+.contenedor-header {
+  background-image: url(public/bandera-argentina.jpg);
+  background-size: 1000px; }
+
+.fondo-animado {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+span.uno,
+span.dos,
+span.tres,
+span.cuatro {
+  border: 0;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  animation: vuelta 7s linear infinite normal both;
+  border-radius: 50%; }
+
+span.uno {
+  width: 100px;
+  height: 100px;
+  bottom: -100px;
+  background-color: yellow; }
+
+span.dos {
+  width: 70px;
+  height: 70px;
+  bottom: -70px;
+  background-color: yellow; }
+
+span.tres {
+  width: 50px;
+  height: 50px;
+  bottom: -50px;
+  background-color: yellow; }
+
+span.cuatro {
+  width: 20px;
+  height: 20px;
+  bottom: -20px;
+  background-color: yellow; }
+
+@keyframes vuelta {
+  from {
+    bottom: 0;
+    opacity: 0; }
+  5% {
+    opacity: 1; }
+  60% {
+    opacity: 1; }
+  to {
+    bottom: calc(100% + 100px);
+    opacity: 0; } }
+
+.fondo-animado span:nth-child(1) {
+  left: 5%; }
+
+.fondo-animado span:nth-child(2) {
+  left: 50%; }
+
+.fondo-animado span:nth-child(3) {
+  left: 35%; }
+
+.fondo-animado span:nth-child(4) {
+  left: 75%; }
+
+.fondo-animado span:nth-child(5) {
+  left: 85%; }
+
+.fondo-animado span:nth-child(6) {
+  left: 90%; }
+
+.fondo-animado span:nth-child(7) {
+  left: 25%; }
+
+.fondo-animado span:nth-child(8) {
+  left: 65%; }
+
+.fondo-animado span:nth-child(9) {
+  left: 60%; }
+
+.fondo-animado span:nth-child(10) {
+  left: 75%; }
+
+.fondo-animado span:nth-child(11) {
+  left: 10%; }
+
+.fondo-animado span:nth-child(12) {
+  left: 45%; }
+
+span.delay-1 {
+  animation-delay: 1s; }
+
+span.delay-2 {
+  animation-delay: 2s; }
+
+span.delay-3 {
+  animation-delay: 3s; }
+
+span.delay-4 {
+  animation-delay: 4s; }
+
+span.delay-6 {
+  animation-delay: 5s; }
+
+span.delay-7 {
+  animation-delay: 6s; }
+
+.seccion6 {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 100px;
+  font-style: italic;
+  text-shadow: 7px 5px 5px yellow;
+  color: black; }
+
 footer {
   background-color: #242321; }
 
