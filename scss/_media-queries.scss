@@ -13,11 +13,11 @@
 @media screen and (min-width:768px) {
 
     .tabla-de-posiciones {
-        margin-left: 250px;
+        margin-right: 150px;
     }
 
     .tabla-de-posiciones-2 {
-        margin-left: 250px;
+        margin-right: 150px;
     }
     
 }
@@ -66,11 +66,11 @@
     }
 
     .tabla-de-posiciones {
-        margin-left: 350px;
+        margin-right: 120px;
     }
 
     .tabla-de-posiciones-2 {
-        margin-left: 350px;
+        margin-right: 120px;
     }
 
     .champions-league {
@@ -133,4 +133,11 @@
         padding-right: 60px;
     }
 
+}
+
+@media screen and (min-width:1024px) {
+
+    .tabla-de-posiciones {
+        margin-right: 220px;
+    }
 }

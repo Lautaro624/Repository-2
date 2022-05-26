@@ -435,9 +435,9 @@ footer {
 
 @media screen and (min-width: 768px) {
   .tabla-de-posiciones, .tabla-de-posiciones-2 {
-    margin-left: 250px; }
+    margin-right: 150px; }
   .tabla-de-posiciones-2 {
-    margin-left: 250px; } }
+    margin-right: 150px; } }
 
 @media screen and (min-width: 1024px) {
   .video-di-maria {
@@ -465,9 +465,9 @@ footer {
     padding-left: 60px;
     padding-right: 60px; }
   .tabla-de-posiciones, .tabla-de-posiciones-2 {
-    margin-left: 350px; }
+    margin-right: 120px; }
   .tabla-de-posiciones-2 {
-    margin-left: 350px; }
+    margin-right: 120px; }
   .champions-league {
     padding-left: 60px;
     padding-right: 60px; }
@@ -504,3 +504,7 @@ footer {
   .texto6-sección5 {
     padding-left: 60px;
     padding-right: 60px; } }
+
+@media screen and (min-width: 1024px) {
+  .tabla-de-posiciones, .tabla-de-posiciones-2 {
+    margin-right: 220px; } }
