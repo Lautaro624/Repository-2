@@ -347,7 +347,7 @@ textarea {
 /*Sección 6*/
 
 .contenedor-header {
-    background-image: url(public/bandera-argentina.jpg);
+    background-image: url(../public/bandera-argentina.jpg);
     background-size:1000px;
     
 }
@@ -500,11 +500,63 @@ span.delay-7 {
 
 .seccion6 {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 250px;
     font-family: 'Bebas Neue', cursive;
     font-size: 100px;
     font-style: italic;
-    text-shadow: 7px 5px 5px yellow;
-    color: black;
+    text-shadow: 7px 5px 5px black;
+    color: white;
+    align-content: center;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.list-group-6 {
+    background-color: transparent;
+    
+    a {
+        display: flex;
+        color: black;
+        font-family: 'Bebas Neue', cursive;
+        font-style: italic;
+        justify-content: center;
+        font-size: 25px;  
+        background-color: transparent;
+    }
+}
+
+.contenedor-bandera {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    background-color: lightblue;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    
+   
+
+
+}
+
+.header-seccion6 {
+    background-color: lightblue;
+}
+
+.h1-seccion6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+    font-style: italic;
+    text-shadow: 7px 5px 5px black;
+    color: white;
+    align-content: center;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
