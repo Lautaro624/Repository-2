@@ -15,7 +15,7 @@ h1 {
     align-items: center;
     justify-content: center;
     font-family: 'Bebas Neue', cursive;
-    font-size: 100px;
+    font-size: 70px;
     font-style: italic;
     text-shadow: 7px 5px 5px black;
     color: white;
@@ -219,6 +219,10 @@ span {
     border:  black;
     text-align: center;
     
+}
+
+tr:nth-child(even) {
+    background-color: white;
     
 }
 
@@ -255,6 +259,62 @@ span {
    
 }
 
+.btn-success {
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+    
+    &:after {
+      background: white;
+      content: "";
+      height: 155px;
+      left: -75px;
+      opacity: .2;
+      position: absolute;
+      top: -50px;
+      transform: rotate(35deg);
+      transition: all 1s;
+      width: 50px;
+      
+    }
+}
+  
+.btn-success:hover {
+    
+    &:after {
+      left: 120%;
+      transition: all 1s;
+    }
+}
+
+.btn-danger {
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+    
+    &:after {
+      background: white;
+      content: "";
+      height: 155px;
+      left: -75px;
+      opacity: .2;
+      position: absolute;
+      top: -50px;
+      transform: rotate(35deg);
+      transition: all 1s;
+      width: 50px;
+      
+    }
+}
+  
+.btn-danger:hover {
+    
+    &:after {
+      left: 120%;
+      transition: all 1s;
+    }
+}
+
 
 /*Sección 4*/
 
@@ -262,10 +322,14 @@ span {
     margin-bottom: 30px;
 }
 
-textarea {
-    width: 100%;
- 
+.mb-3-4 {
+    margin-left: 20%;
+    margin-right: 20%;
     
+}
+
+.btn-4 {
+    margin-top: 50px;
 }
   
 
@@ -278,6 +342,350 @@ textarea {
     text-align: center;
     margin-bottom: 50px;
 }
+
+section, section div {
+    
+    transition-duration: .6s;
+}
+  
+  
+section, .button { transition-timing-function: ease; }
+  
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: .375rem .375rem 0;
+    height: 2.5rem;
+    background: #A9ADB6;
+    border-radius: .25rem;
+    perspective: 300;
+    box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0,0,0,.2), inset 0 .25rem 1rem rgba(0,0,0,.1);
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+  
+  
+.button { opacity: 0; 
+  
+     a {
+    font-family: 'Bebas Neue', cursive;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 30px;
+    color:  #1DA1F2;
+  }
+
+}
+
+.cover {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    transform-origin: center bottom;
+    transform-style: preserve-3d;
+    font: 1.25em/2 "icon";
+    
+    text-align: center;
+    pointer-events: none;
+    z-index: 100;
+}
+  
+.innie, .outie, .spine, .shadow { position: absolute; width: 100%; }
+  
+  .innie, .outie {
+    height: 100%;
+    background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.1) 100%);
+    border-radius: .25rem;
+}
+  
+.twitter-logo {
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,.25))
+}
+  
+.innie {
+    background-color: #67E2FE;
+    text-shadow: 0 -2px 4px rgba(0,0,0,.2);
+    
+}
+  
+.spine {
+    top: .25rem;
+    background: #20C7F3;
+    height: .25rem;
+    transform: rotateX(90deg);
+    transform-origin: center top;
+}
+  
+.shadow {
+    top: 100%;
+    left: 0;
+    height: 3.5rem;
+    transform-origin: center top;
+    transform: rotateX(90deg);
+    opacity: 0;
+    z-index: 0;
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,.6) 0%, transparent 100%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.6) 0%, transparent 100%);
+    border-radius: .4rem;
+  
+}
+  
+.outie {
+    background-color: #1DA1F2;
+    transform: translateZ(.25rem);
+    text-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+  
+section:hover { background: white; }
+section:hover .button { opacity: 1; }
+  
+section:hover .cover, section:hover .innie, section:hover .spine, section:hover .outie, section:hover .spine { transition-timing-function: cubic-bezier(.2,.7,.1,1.1); }
+  
+section:hover .cover { transform: rotateX(-120deg);  }
+  
+section:hover .innie { background-color: #1DA1F2; }
+section:hover .spine { background-color: #1DA1F2; }
+section:hover .outie { background-color: #2174A0; color: rgba(255,255,255,0); }
+  
+section:hover .shadow { 
+    opacity: 1;
+    transform: rotateX(45deg) scale(.95);
+}
+  
+.section-2, section div {
+    
+    transition-duration: .6s;
+}
+  
+  
+.section-2, .button { transition-timing-function: ease; }
+  
+.section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: .375rem .375rem 0;
+    height: 2.5rem;
+    background: #A9ADB6;
+    border-radius: .25rem;
+    perspective: 300;
+    box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0,0,0,.2), inset 0 .25rem 1rem rgba(0,0,0,.1);
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+  
+
+.button-2 { opacity: 0; 
+  
+     a {
+    font-family: 'Bebas Neue', cursive;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 30px;
+    color: #4267B2;
+  }
+
+}
+  
+.cover-2 {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    transform-origin: center bottom;
+    transform-style: preserve-3d;
+    font: 1.25em/2 "icon";
+    
+    text-align: center;
+    pointer-events: none;
+    z-index: 100;
+}
+  
+.innie-2, .outie-2, .spine-2, .shadow-2 { position: absolute; width: 100%; }
+  
+.innie-2, .outie-2 {
+    height: 100%;
+    background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.1) 100%);
+    border-radius: .25rem;
+}
+  
+.facebook-logo {
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,.25));
+    
+}
+  
+.innie-2 {
+    background-color:#4267B2;
+    text-shadow: 0 -2px 4px rgba(0,0,0,.2);
+}
+  
+.spine-2 {
+    top: .25rem;
+    background: #4267B2;
+    height: .25rem;
+    transform: rotateX(90deg);
+    transform-origin: center top;
+}
+  
+.shadow-2 {
+    top: 100%;
+    left: 0;
+    height: 3.5rem;
+    transform-origin: center top;
+    transform: rotateX(90deg);
+    opacity: 0;
+    z-index: 0;
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,.6) 0%, transparent 100%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.6) 0%, transparent 100%);
+    border-radius: .4rem;
+  
+}
+  
+.outie-2 {
+    background-color: #4267B2;
+    transform: translateZ(.25rem);
+    text-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+  
+.section-2:hover { background: white; }
+.section-2:hover .button-2 { opacity: 1; }
+  
+.section:hover .cover-2, .section-2:hover .innie-2, .section-2:hover .spine-2, .section-2:hover .outie-2 .section-2:hover .spine-2 { transition-timing-function: cubic-bezier(.2,.7,.1,1.1); }
+  
+.section-2:hover .cover-2 { transform: rotateX(-120deg);  }
+  
+.section-2:hover .innie-2 { background-color: #4267B2; }
+.section-2:hover .spine-2 { background-color: #4267B2; }
+.section-2:hover .outie-2 { background-color: #282282; color: rgba(255,255,255,0); }
+  
+.section-2:hover .shadow-2 { 
+    opacity: 1;
+    transform: rotateX(45deg) scale(.95);
+}
+  
+
+.section-3, section div {
+    
+    transition-duration: .6s;
+}
+  
+  
+.section-3, .button-3 { transition-timing-function: ease; }
+  
+.section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: .375rem .375rem 0;
+    height: 2.5rem;
+    background: #A9ADB6;
+    border-radius: .25rem;
+    perspective: 300;
+    box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0,0,0,.2), inset 0 .25rem 1rem rgba(0,0,0,.1);
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+  
+
+.button-3 { opacity: 0; 
+  
+        a {
+        font-family: 'Bebas Neue', cursive;
+        font-style: italic;
+        text-decoration: none;
+        font-size: 30px;
+        color: #bc2a8d;
+    }
+  
+}
+
+
+.cover-3 {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    transform-origin: center bottom;
+    transform-style: preserve-3d;
+    font: 1.25em/2 "icon";
+    
+    text-align: center;
+    pointer-events: none;
+    z-index: 100;
+}
+  
+.innie-3, .outie-3, .spine-3, .shadow-3 { position: absolute; width: 100%; }
+  
+.innie-3, .outie-3 {
+    height: 100%;
+    background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.1) 100%);
+    border-radius: .25rem;
+}
+  
+.instagram-logo {
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,.25));
+    
+}
+  
+.innie-3 {
+    background-color:#8a3ab9;
+    text-shadow: 0 -2px 4px rgba(0,0,0,.2);
+}
+  
+.spine-3 {
+    top: .25rem;
+    background: #bc2a8d ;
+    height: .25rem;
+    transform: rotateX(90deg);
+    transform-origin: center top;
+}
+  
+.shadow-3 {
+    top: 100%;
+    left: 0;
+    height: 3.5rem;
+    transform-origin: center top;
+    transform: rotateX(90deg);
+    opacity: 0;
+    z-index: 0;
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,.6) 0%, transparent 100%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.6) 0%, transparent 100%);
+    border-radius: .4rem;
+  
+}
+  
+.outie-3 {
+    background-color: #bc2a8d;
+    transform: translateZ(.25rem);
+    text-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+  
+.section-3:hover { background: white; }
+.section-3:hover .button-3 { opacity: 1; }
+  
+.section:hover .cover-3, .section-3:hover .innie-3, .section-3:hover .spine-3, .section-3:hover .outie-3 .section-3:hover .spine-3 { transition-timing-function: cubic-bezier(.2,.7,.1,1.1); }
+  
+.section-3:hover .cover-3 { transform: rotateX(-120deg);  }
+  
+.section-3:hover .innie-3 { background-color: #bc2a8d; }
+.section-3:hover .spine-3 { background-color: #bc2a8d; }
+.section-3:hover .outie-3 { background-color: #8a176d; color: rgba(255,255,255,0); }
+  
+.section-3:hover .shadow-3 { 
+    opacity: 1;
+    transform: rotateX(45deg) scale(.95);
+}
+  
+  
+  
 
 /*sección 5*/
 
@@ -327,28 +735,31 @@ textarea {
     font-style: italic;
     padding-left: 10px;
     padding-right: 10px;
-}
 
-.carousel-caption {
-    p{
-        font-size: 50px;
-    }
-
-    h5 {
-        font-size: 30px;
-    }
-
+        h4 {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin-top: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;   
+        }
 }
 
 .container-fluid {
     margin-top: 50px;
 }
 
+.h4-seccion5 {
+   
+}
+
 /*Sección 6*/
 
 .contenedor-header {
-    background-image: url(../public/bandera-argentina.jpg);
-    background-size:1000px;
+    
+    background-size:100%;
     
 }
 
@@ -375,9 +786,6 @@ span.cuatro {
     animation: vuelta 7s linear infinite normal both;
     border-radius: 50%;
 }
-
-
-
 
 
 span.uno {
@@ -431,47 +839,47 @@ span.cuatro {
 }
 
 .fondo-animado span:nth-child(2) {
-    left: 50%;
-}
-
-.fondo-animado span:nth-child(3) {
-    left: 35%;
-}
-
-.fondo-animado span:nth-child(4) {
-    left: 75%;
-}
-
-.fondo-animado span:nth-child(5) {
-    left: 85%;
-}
-
-.fondo-animado span:nth-child(6) {
-    left: 90%;
-}
-
-.fondo-animado span:nth-child(7) {
-    left: 25%;
-}
-
-.fondo-animado span:nth-child(8) {
-    left: 65%;
-}
-
-.fondo-animado span:nth-child(9) {
-    left: 60%;
-}
-
-.fondo-animado span:nth-child(10) {
-    left: 75%;
-}
-
-.fondo-animado span:nth-child(11) {
     left: 10%;
 }
 
-.fondo-animado span:nth-child(12) {
+.fondo-animado span:nth-child(3) {
+    left: 15%;
+}
+
+.fondo-animado span:nth-child(4) {
+    left: 40%;
+}
+
+.fondo-animado span:nth-child(5) {
+    left: 65%;
+}
+
+.fondo-animado span:nth-child(6) {
+    left: 70%;
+}
+
+.fondo-animado span:nth-child(7) {
+    left: 35%;
+}
+
+.fondo-animado span:nth-child(8) {
+    left: 85%;
+}
+
+.fondo-animado span:nth-child(9) {
     left: 45%;
+}
+
+.fondo-animado span:nth-child(10) {
+    left: 65%;
+}
+
+.fondo-animado span:nth-child(11) {
+    left: 55%;
+}
+
+.fondo-animado span:nth-child(12) {
+    left: 60%;
 }
 
 span.delay-1 {
@@ -503,7 +911,7 @@ span.delay-7 {
     align-items: center;
     justify-content: center;
     font-family: 'Bebas Neue', cursive;
-    font-size: 100px;
+    font-size: 45px;
     font-style: italic;
     text-shadow: 7px 5px 5px black;
     color: white;
@@ -529,7 +937,7 @@ span.delay-7 {
 
 .contenedor-bandera {
     display: flex;
-    height: 200px;
+    height: 220px;
     width: 100%;
     background-color: lightblue;
     text-align: center;
@@ -551,12 +959,46 @@ span.delay-7 {
     align-items: center;
     justify-content: center;
     font-family: 'Bebas Neue', cursive;
-    font-size: 100px;
+    font-size: 70px;
     font-style: italic;
     text-shadow: 7px 5px 5px black;
     color: white;
     align-content: center;
     padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.h2-seccion6 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center; 
+}
+
+.texto-finalissima {
+    margin-top: 40px;
+    font-style: italic;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+   
+}
+
+.contenedor-carousel {
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+    
+}
+
+.video-finalissima {
+    width: 100%;
+    margin-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
 }

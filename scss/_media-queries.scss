@@ -20,9 +20,18 @@
         margin-right: 150px;
     }
     
+    .seccion6 {
+        font-size: 80px;
+    }
 }
 
 @media screen and (min-width:1024px) {
+
+    h1 {
+        padding-top: 10px;
+        font-size: 90px;
+        
+    }
 
     .video-di-maria {
         padding-left: 60px;
@@ -133,6 +142,30 @@
         padding-right: 60px;
     }
 
+    .h1-seccion6 {
+        padding-top: 10px;
+        font-size: 90px;
+        
+    }
+
+    .seccion6 {
+        font-size: 90px;
+    }
+
+    .texto-finalissima {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .contenedor-carousel {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .video-finalissima {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -140,4 +173,21 @@
     .tabla-de-posiciones {
         margin-right: 220px;
     }
+
+    section, .section-2, .section-3 {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    
+}
+
+@media screen and (min-width:1440px) {
+    
+    section, .section-2, .section-3 {
+        margin-left: 30%;
+        margin-right: 30%;
+    
+    }
+
 }
